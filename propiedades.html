@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRUD Propiedades</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>Administración Propiedades</h1>
+</header>
+
+<main class="contenedor">
+
+<section class="formulario">
+
+<h2>Registro Propiedad</h2>
+
+<form>
+
+<label>Tipo Propiedad</label>
+<select>
+<option>Casa</option>
+<option>Departamento</option>
+<option>Terreno</option>
+</select>
+
+<label>Descripción</label>
+<textarea rows="5"></textarea>
+
+<label>Dormitorios</label>
+<input type="number">
+
+<label>Baños</label>
+<input type="number">
+
+<label>Área Terreno</label>
+<input type="number">
+
+<label>Área Construida</label>
+<input type="number">
+
+<label>Precio UF</label>
+<input type="number">
+
+<label>Precio Pesos</label>
+<input type="number">
+
+<label>Fotografías</label>
+<input type="file" multiple>
+
+<h3>Características</h3>
+
+<label><input type="checkbox"> Piscina</label>
+<label><input type="checkbox"> Bodega</label>
+<label><input type="checkbox"> Logia</label>
+<label><input type="checkbox"> Estacionamiento</label>
+<label><input type="checkbox"> Cocina Amoblada</label>
+<label><input type="checkbox"> Antejardín</label>
+<label><input type="checkbox"> Patio Trasero</label>
+
+<button type="submit">
+Guardar Propiedad
+</button>
+
+</form>
+
+</section>
+
+<section>
+
+<table>
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Tipo</th>
+<th>UF</th>
+<th>Precio</th>
+<th>Acciones</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>Casa</td>
+<td>5600</td>
+<td>$200.000.000</td>
+<td>
+<button>Editar</button>
+<button>Eliminar</button>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</body>
+</html>
