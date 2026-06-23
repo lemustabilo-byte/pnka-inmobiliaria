@@ -1,0 +1,17 @@
+function validarPropiedad(){
+
+ let tipo = document.getElementById("tipo").value;
+ let descripcion = document.getElementById("descripcion").value;
+
+ if(tipo==""){
+   Swal.fire("Error","Seleccione tipo","error");
+   return false;
+ }
+
+ if(descripcion==""){
+   Swal.fire("Error","Ingrese descripción","error");
+   return false;
+ }
+
+ return true;
+}
