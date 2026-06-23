@@ -1,0 +1,13 @@
+const valorUF = 39000;
+
+document.getElementById("precioCLP")
+.addEventListener("keyup",function(){
+
+ let clp = parseInt(this.value);
+
+ if(!isNaN(clp)){
+   document.getElementById("precioUF").value =
+   (clp/valorUF).toFixed(2);
+ }
+
+});
